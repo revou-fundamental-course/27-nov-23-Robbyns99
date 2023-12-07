@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="shortcut icon" href='https://png.pngtree.com/element_our/20200702/ourmid/pngtree-technology-icon-vector-download-image_2286321.jpg'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="navbar">
+                    <li></li>
+                    <li><a href="#" onclick="HalamanUtama()">Halaman Utama</a></li>
+                    <li><a href="#" onclick="Tampilan1()">Luas Segitiga</a></li>
+                    <li><a href="#" onclick="Tampilan2()">Keliling Segitiga</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-home">
+        <section id="Utama">
+            <h2 class="home">MARI MEHITUNG BANGUNAN SEGITIGA</h2>
+            <div class="illustration">
+                <img class="illustration" src="https://phoneky.co.uk/thumbs/screensavers/down/cartoon-anime/math_b4ohab2n.gif" alt="Calculator Illustration">
+            </div>
+            <p class="p-keterangan">Klik salah satu dari menu diatas, setelah itu buka masukan angka yang mau dihitung</p>
+        </section>
+    </div>
+    <!-- Luas Segitiga  -->
+    <div id="Luas" style="display: none;">
+        <h2>Kalkulator Luas Segitiga</h2> 
+        <form id="Form Luas Segitiga">
+            <img class="gambar" src="https://3.bp.blogspot.com/-4uwtS9u5LoQ/XA36BksDqtI/AAAAAAAAPo4/03J6fohFhSErcfsbVd0GxB8Z5A58bAU3gCLcBGAs/s1600/Rumus%2BLuas%2BSegitiga.png" alt="Rumus Luas Segitiga">
+            <label for="alas">Alas Segitiga</label>
+            <input type="number" id="alas" name="alas" placeholder="Nilai Alas" required>  
+            <label for="tinggi">Tinggi Segitiga</label>
+            <input type="number" id="tinggi" name="tinggi" placeholder="Nilai Tinggi" required>   
+            <button type="button" onclick="luasSegitiga()">Hitung</button>
+            <button class="button-reset" type="button" onclick="resetinput1()">Reset</button>
+            <p type="text" id="result" name="result" readonly></p>
+            <p id="L1"></p>
+            <p id="L2"></p>
+            <p id="L3"></p>
+        </form>
+    </div>
+    <!-- Keliling Segitiga -->
+    <div id="Keliling" style="display: none;">
+        <h2>Kalkulator Keliling Segitiga</h2>
+        <form id="Formulir Keliling Segitiga">
+            <img class="gambar" src="https://2.bp.blogspot.com/-WZniDLhkvCI/XA358hjJBzI/AAAAAAAAPo0/BhWHYOfU2sogl_phnu-o09rBuWEkuif1wCLcBGAs/s400/Rumus%2BKeliling%2BSegitiga.png" alt="Rumus Keliling Segitiga">
+            <label for="alas">Sisi 1</label>
+            <input type="number" id="sisi1" name="sisi1" placeholder="Nilai Sisi 1" required>
+            <label for="tinggi">Sisi 2</label>
+            <input type="number" id="sisi2" name="sisi2" placeholder="Nilai Sisi 2" required>
+            <label for="tinggi">Sisi 3</label>
+            <input type="number" id="sisi3" name="sisi3" placeholder="Nilai Sisi 3" required>
+            <button type="button" onclick="kelilingSegitiga()">Hitung</button>
+            <button class="button-reset" type="button" onclick="resetinput2()">Reset</button>
+            <p type="text" id="result" name="result" readonly></p>
+            <p id="K1"></p>
+            <p id="K2"></p>
+            <p id="K3"></p>
+        </form>
+    </div>
+    <footer>
+        <p> Copyright 2023 &#169; Study with <i class="bi bi-laptop text-warning"> RevoU</i> </p>
+    </footer>
+    <script src="js/Scripts.js"></script>
+</body>
+
+</html>
